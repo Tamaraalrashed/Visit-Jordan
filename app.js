@@ -43,13 +43,4 @@ for (var i = 0; i < photos; i++) {
 }
 document.write(result);
 
-//if (countryName !== 'Aqaba') {
-
-//}(countryName !== 'Aqaba') {
-// console.log('before');
-//document.write('<img src="images/welcome.jpg>')
-// console.log('after');
-
-
-console.log('hhhhh');
 

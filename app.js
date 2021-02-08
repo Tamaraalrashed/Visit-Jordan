@@ -3,32 +3,53 @@ alert('Welcome in Jordan')
 
 var Name = prompt('what is your name?', 'Ali');
 console.log(Name);
-alert('Hello' + Name);
+alert('Hello ' + Name);
 var interest = prompt('Are you interested in camping ?', 'Yes');
 
 
 if (interest == 'Yes') {
-    alert('Visit Wadi Rum')
+    alert('Visit Wadi Rum');
 
 }
 else {
-    alert('Try to see Petra & Aqaba')
+    alert('Try to see Petra & Aqaba');
 
+};
+
+var cityName = prompt('Please enter if you want to visit aqaba, petra');
+
+
+
+
+while (cityName != 'aqaba' && cityName != 'petra') {
+    cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum');
 }
 
-var pro = prompt('Please enter your country');
-
-// console.log(f);
-while (pro=='jordan')
- {
-    document.write('<p>You are already in your home, enjoy exploring the site.</p>');
-    document.write('<img src="images/jordan-flag.jpg">');  
-    
+if (cityName == 'aqaba') {
+    cityName = '<img src="images/jordan-flag.jpg">';
 }
-if (pro!=='jordan') {
-    document.write('<img src="images/welcome.jpg>')
-    
+else {
+    cityName = '<img src="images/welcome.jpg">'
 }
 
 
+var result = '';
+
+var photos = prompt("how many photos you want to see,please select 1,2, or 3");
+
+
+for (var i = 0; i < photos; i++) {
+    result = result + cityName
+}
+document.write(result);
+
+//if (countryName !== 'Aqaba') {
+
+//}(countryName !== 'Aqaba') {
+// console.log('before');
+//document.write('<img src="images/welcome.jpg>')
+// console.log('after');
+
+
+console.log('hhhhh');
 

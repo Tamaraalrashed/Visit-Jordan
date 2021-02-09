@@ -16,13 +16,11 @@ else {
 
 };
 
-var cityName = prompt('Please enter if you want to visit aqaba, petra');
-
-
-
+var cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum','Aqaba, Petra, wadi rum');
+cityName =cityName.toLowerCase()
 
 while (cityName != 'aqaba' && cityName != 'petra') {
-    cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum');
+    cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum', 'Aqaba, Petra, wadi rum');
 }
 
 if (cityName == 'aqaba') {
@@ -31,7 +29,6 @@ if (cityName == 'aqaba') {
 else {
     cityName = '<img src="images/welcome.jpg">'
 }
-
 
 var result = '';
 

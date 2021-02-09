@@ -16,28 +16,46 @@ else {
 
 };
 
-var cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum','Aqaba, Petra, wadi rum');
-cityName =cityName.toLowerCase()
-
-while (cityName != 'aqaba' && cityName != 'petra') {
-    cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum', 'Aqaba, Petra, wadi rum');
-}
-
-if (cityName == 'aqaba') {
-    cityName = '<img src="images/jordan-flag.jpg">';
-}
-else {
-    cityName = '<img src="images/welcome.jpg">'
-}
-
-var result = '';
-
-var photos = prompt("how many photos you want to see,please select 1,2, or 3");
+var cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum');
+cityName = cityName.toLowerCase()
+console.log('cityName');
 
 
-for (var i = 0; i < photos; i++) {
-    result = result + cityName
-}
-document.write(result);
+function validate() {
+    console.log('ahlam');
+    console.log(cityName)
+    if (cityName == '') {
+        alert("Name must be filled out");
+        console.log(cityName + 'insid')
 
 
+    }
+    }
+
+
+    validate();
+
+    while (cityName != 'aqaba' && cityName != 'petra') {
+        cityName = prompt('Please enter if you want to visit Aqaba, Petra or wadi rum');
+    }
+
+    if (cityName == 'aqaba') {
+        cityName = '<img src="images/jordan-flag.jpg">';
+    }
+    else {
+        cityName = '<img src="images/welcome.jpg">'
+    }
+
+    var result = '';
+
+    var photos = prompt("how many photos you want to see,please select 1,2, or 3");
+
+
+    for (var i = 0; i < photos; i++) {
+        result = result + cityName
+    }
+
+    document.write(result);
+
+    
+    
